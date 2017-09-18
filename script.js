@@ -1,1 +1,1 @@
-$("#response")("script.js has loaded!");
+$("#response").html("script.js has loaded!");
