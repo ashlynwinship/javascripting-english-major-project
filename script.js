@@ -1,1 +1,1 @@
-alert("script.js has loaded!");
+$("#response")("script.js has loaded!");
