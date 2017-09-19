@@ -1,1 +1,1 @@
-$("#response").html("scripts.js has loaded!");
+for ( let i = 1; i < 4; i = i + 1 ) { $("#response").append("<br />" + i); }
