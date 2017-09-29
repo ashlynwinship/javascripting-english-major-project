@@ -1,3 +1,5 @@
-let tipCalculator
-tipCalculator = function(total, tipRate) { let tipAmount; tipAmount = tipRate * total; let tipTotal; tipTotal = tipRate * 0.01 * total; if (tipRate < 1) { $("#response").html("Your tip is $" + tipAmount); } else { $("#response").html("Your tip is $" + tipTotal); } };
-tipCalculator(50.00, 20);
+let myHabaneroSauceSquirts, myBurritoObject;
+myHabaneroSauceSquirts = 3;
+myBurritoObject = { tortilla: "wheat", guacamole: true, beans: "pinto", habaneroSauceSquirts: myHabaneroSauceSquirts, spiciness: function(){ if (myHabaneroSauceSquirts > 0){alert("This is a spicy burrito!"); } else {alert("This is a mild burrito.");} } };
+$("#response").html("Your burrito has " + myBurritoObject.habaneroSauceSquirts + " squirts of habanero.");
+myBurritoObject.spiciness();
