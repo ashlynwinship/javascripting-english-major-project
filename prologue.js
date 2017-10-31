@@ -19,8 +19,9 @@ line1Text = line1Text + "<br />(line 2 would go here)</p></blockquote>";
 $("#prologue").html(line1Text);
 
 $("#prologue a").click(function(){
-  let glossText, clickedWord;
+  let glossText, clickedWord, modernWord;
   clickedWord = $( this ).text();
-  glossText = "<h2>You clicked on the word: " + clickedWord + "</h2>";
+  modernWord = $( this ).data("modern");
+  glossText = "<h2>You clicked on the word: " + clickedWord + ", which means " + modernWord + "</h2>";
   $("#glosses").html(glossText);
 });
