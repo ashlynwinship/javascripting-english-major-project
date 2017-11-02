@@ -10,21 +10,11 @@ tileLayer.addTo(deriveMap);
 deriveMap.setView([40.722622, -74.000849], 15);
 
 let stLukesMarker, pier40, pier45, hollandTunnel, aveOfAmericas;
-stLukesMarker = L.marker([40.730391, -74.006171]);
-stLukesMarker.addTo(deriveMap);
-stLukesMarker.bindPopup("Starting point for Dérive 1");
-pier40 = L.marker([40.729419, -74.011886]);
-pier40.addTo(deriveMap);
-pier40.bindPopup("Pier 40");
-pier45 = L.marker([40.733193, -74.011694]);
-pier45.addTo(deriveMap);
-pier45.bindPopup("Pier 45");
-hollandTunnel = L.marker([40.726062, -74.011167]);
-hollandTunnel.addTo(deriveMap);
-hollandTunnel.bindPopup("Holland Tunnel");
-aveOfAmericas = L.marker([40.722012, -74.005449]);
-aveOfAmericas.addTo(deriveMap);
-aveOfAmericas.bindPopup("Canal Street and 6th Avenue");
+stLukesMarker = L.marker([40.730391, -74.006171]).addTo(deriveMap).bindPopup("Starting point for Dérive 1");
+pier40 = L.marker([40.729419, -74.011886]).addTo(deriveMap).bindPopup("Pier 40");
+pier45 = L.marker([40.733193, -74.011694]).addTo(deriveMap).bindPopup("Pier 45");
+hollandTunnel = L.marker([40.726062, -74.011167]).addTo(deriveMap).bindPopup("Holland Tunnel");
+aveOfAmericas = L.marker([40.722012, -74.005449]).addTo(deriveMap).bindPopup("Canal Street and 6th Avenue");
 let derive1;
 derive1 = [[40.730391, -74.006171],
            [40.729419, -74.011886],
@@ -34,6 +24,15 @@ derive1 = [[40.730391, -74.006171],
 let derive1Polyline;
 derive1Polyline = L.polyline(derive1, {color: "#cccc00"}
                     ).addTo(deriveMap);
+
+let pilates, pilatesMarker, miscDerive1;
+pilates = [40.730048, -73.998508];
+pilatesMarker = L.marker(pilates).addTo(deriveMap).bindPopup("Something here reminded me of pilates.");
+miscDerive1 = [[40.722012, -74.005449],
+               [40.730048, -73.998508]];
+let miscDerive1Line;
+miscDerive1Line = L.polyline(miscDerive1, {color: "#ff0000"}
+                ).addTo(deriveMap);
 
 let worthStMarker, wBroadwayCorner, worldTradeCenter, oculus, stPaulsChapel, cityHallPark;
 worthStMarker = L.circleMarker([40.717097, -74.006755]);
@@ -63,4 +62,14 @@ derive2 = [[40.717097, -74.006755],
            [40.71285, -74.006465]];
 let derive2Polyline;
 derive2Polyline = L.polyline(derive2, {color: "#cc00ff"}
+                    ).addTo(deriveMap);
+
+let subStation, lafAndWorth, miscDerive2;
+subStation = L.circleMarker([40.713011, -74.00328]).addTo(deriveMap).bindPopup("Brooklyn Bridge-City Hall/Chambers Street Station");
+lafAndWorth = L.circleMarker([40.715496, -74.003032]).addTo(deriveMap).bindPopup("Turn here onto Worth.");
+miscDerive2 = [[40.713011, -74.00328],
+               [40.715496, -74.003032],
+               [40.717097, -74.006755]];
+let miscDerive2Line;
+miscDerive2Line = L.polyline(miscDerive2, {color: "#ff0000"}
                     ).addTo(deriveMap);
