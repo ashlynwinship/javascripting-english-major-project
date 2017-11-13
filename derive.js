@@ -7,7 +7,7 @@ L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
       maxZoom: 18
     });
 tileLayer.addTo(deriveMap);
-deriveMap.setView([40.722622, -74.000849], 15);
+deriveMap.setView([40.722622, -74.000849], 14);
 
 let stLukesMarker, pier40, pier45, hollandTunnel, aveOfAmericas;
 stLukesMarker = L.marker([40.730391, -74.006171]).addTo(deriveMap).bindPopup("Starting point for Dérive 1");
