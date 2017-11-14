@@ -1,1 +1,0 @@
-$("#fourth-paragraph").addClass("lead");
