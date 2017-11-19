@@ -103,3 +103,18 @@ worldTileLayer.addTo(juliusWorld);
 juliusWorld.setView([40.722622, -74.000849], 14);
 
 //define markers for Julius's world.
+
+
+
+
+//Markdown:
+let md;
+md = window.markdownit({html: true}).use(window.markdownitFootnote);
+$.ajax({
+  url: "hastings-street.md",
+  success: function(markdown){
+    let html;
+    html = md.render(markdown);
+    $("#content").html(html);
+  }
+});
