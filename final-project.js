@@ -102,6 +102,8 @@ L.worldTileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{
 worldTileLayer.addTo(juliusWorld);
 juliusWorld.setView([40.722622, -74.000849], 14);
 
+//define markers for Julius's world.
+
 let md;
 md = window.markdownit({html: true}).use(window.markdownitFootnote);
 ["first-map", "second-map", "third-map"].forEach(function(tab){
