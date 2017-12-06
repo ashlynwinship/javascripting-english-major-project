@@ -9,6 +9,15 @@ L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 tileLayer.addTo(deriveMap);
 deriveMap.setView([40.722622, -74.000849], 14);
 
+let featuresLayer;
+featuresLayer = L.featureGroup(featuresLayer.map(function)(feature){
+  let popupContent;
+  popupContent = "<h4>" + feature.name + "</h4>";
+  popupContent = popupContent + "Read about" + feature.name + " on <a href='" + feature.wikipedia + "'>Wikipedia</a>.";
+  return L.marker(feature.latLng).bindPopup(popupContent);
+})
+);
+
 let stLukesMarker, pier40, pier45, hollandTunnel, aveOfAmericas;
 stLukesMarker = L.marker([40.730391, -74.006171]).addTo(deriveMap).bindPopup("Starting point for Dérive 1");
 pier40 = L.marker([40.729419, -74.011886]).addTo(deriveMap).bindPopup("Pier 40");
