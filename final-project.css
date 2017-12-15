@@ -1,10 +1,19 @@
 .map {
   height: 600px;
 }
-
-p {
-  color:  #657b83;
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+#intro {
+  text-align: center;
 }
 #map-headings {
-  color: #b58900;
+  color: #660066;
+}
+p {
+  color:  #657b83;
 }

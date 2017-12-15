@@ -11,12 +11,27 @@
   </head>
   <body>
     <div class="container">
-     <h1>"Open" City</h1>
-     <h2>A look at a few of New York City's many lives.</h2>
-     <p>This website features maps from the book <em>Open City</em> by Teju Cole, as well as maps of my own journeys through New York City.</p>
-     <p id="map-headings">My New York City:</p>
-     <div id="first-map" class="map"></div>
-     <p>Map Key: My derive locations are marked with teardrops. My first derive is in yellow and my second is in purple; the red lines indicate places I went right before or after the derives that I still found interesting enough to point out. The starting points of eaach derive are marked in green; click on these for a reflection of my thoughts about each journey. Julius's locations are marked with circles.</p>
+      <h1>New York Cities</h1>
+      <h2>A comparison of interpretations of the city</h2>
+      <p id="intro">This website features locations referenced in the book <em>Open City</em> by Teju Cole, as well as maps of my own journeys through New York City. This site is my final project for my <em>Digital Literary Studies: Novel Maps of NY</em> class.</p>
+  <div class="row">
+  <div id="content">
+    <nav id="nav-tabs" class="nav nav-pills mt-3" role="tablist">
+      <a class="nav-link active" href="#my-city" data-toggle="tab" role="tab">My New York City</a>
+      <a class="nav-link" href="#julius-city" data-toggle="tab" role="tab">Julius's New York City</a>
+    </nav>
+    <div class="tab-content p-3">
+  <section class="tab-pane active" id="my-city" role="tabpanel"> </section>
+  <section class="tab-pane" id="julius-city" role="tabpanel"> </section>
+    </div>
+  </div>
+    <div class="col-md-8" id="map-sidebar">
+      <div id="first-map" class="map"></div>
+        <p id="map-key">Map Key: My derive locations are marked with teardrops. My first derive is in orange and my second is in purple; the red lines indicate places I went right before or after the derives that I still found interesting enough to point out. The yellow area represents where I spend most of my time. The <em>Open City</em> character Julius's locations are marked with circles.</p>
+      </div>
+    </div>
+  </div>
+</div>
      <p id="second-paragraph"><a href="http://www.nytimes.com/2011/05/19/books/open-city-by-teju-cole-book-review.html">Click here for a review of the book.</a></p>
      <img src="https://images-na.ssl-images-amazon.com/images/I/51WaKQr3aiL._SX322_BO1,204,203,200_.jpg"
      alt="This is the cover of Teju Cole's novel."
@@ -39,12 +54,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.0/markdown-it.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-footnote/3.0.1/markdown-it-footnote.js"></script>
 <script src="could-be.js"></script>
-
-<nav id="nav-tabs" class="nav nav-pills mt-3">
-  <a class="nav-link active" href=#first-map data-toggle="tab" role="tab">My New York City</a>
-  <a class="nav-link" href=#second-map data-toggle="tab" role="tab">Julius's New York City</a>
-</nav>
-<div class="tab-content p-3">
-  <section class="tab-pane active" id="first-map" role="tabpanel"></section>
-  <section class="tab-pane" id="second-map" role="tabpanel"></section>
-</div>
