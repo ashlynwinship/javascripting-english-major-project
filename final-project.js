@@ -93,7 +93,7 @@ myTriangle = [[40.732454, -73.989180],
               [40.733202, -73.988493]];
 myTrianglePolygon = L.polygon(myTriangle, {
                         color: "#ffff00",
-                        fillColor: "#ffffcc"
+                        fillColor: "#ffff80"
                       }
 ).addTo(myMap);
 
