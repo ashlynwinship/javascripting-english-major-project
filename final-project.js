@@ -79,14 +79,11 @@ miscDerive2Line = L.polyline(miscDerive2, {color: "#ff0000"}
 //define Julius's markers
 
 //My Triangle
-let washingtonSqPk, founders, palladium, point1, point2, point3, point4, myTriangle, myTrianglePolygon;
+let washingtonSqPk, founders, palladium, point, myTriangle, myTrianglePolygon;
 washingtonSqPk = L.marker([40.730885, -73.997838]).addTo(myMap).bindPopup("Washington Square Park");
 founders = L.marker([40.732454, -73.989180]).addTo(myMap).bindPopup("Founders Hall");
 palladium = L.marker([40.733202, -73.988493]).addTo(myMap).bindPopup("Palladium");
-point1 = L.marker([40.734689, -73.994587]).addTo(myMap).bindPopup("5th Ave");
-point2 = L.marker([40.730714, -73.995607]).addTo(myMap).bindPopup("University");
-point3 = L.marker([40.731584, -73.994791]).addTo(myMap).bindPopup("8th St");
-point4 = L.marker([40.730064, -73.991176]).addTo(myMap).bindPopup("Astor Place");
+point = L.marker([40.730064, -73.991176]).addTo(myMap).bindPopup("Astor Place");
 myTriangle = [[40.732454, -73.989180],
               [40.734689, -73.994587],
               [40.730885, -73.997838],
@@ -104,7 +101,7 @@ myTrianglePolygon = L.polygon(myTriangle, {
 //Markdown
 let md;
 md = window.markdownit({html: true}).use(window.markdownitFootnote);
-["my-city", "julius-city"].forEach(function(tab){
+["my-city", "derive1", "derive2", "julius-city"].forEach(function(tab){
   $.ajax({
     url: "https://ashlynwinship.github.io/javascripting-english-major-project/" + tab + ".md",
     success: function(markdown){
