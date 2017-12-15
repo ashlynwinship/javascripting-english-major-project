@@ -1,1 +1,4 @@
+## Derive 2
+
 At the beginning of my second derive, I found myself unexpectedly in TriBeCa (that's how unfamiliar I am with the city). After stumbling upon the World Trade Center Memorial and discovering the Oculus, I made my way toward St. Paul's Chapel. The Oculus was very strange to me, because I didn't know it was a mall and I thought it looked like some kind of sea creature. The chapel was beautiful, although I couldn't go inside because it was under construction, and it seemed kind of out of place in the middle of the glassy, affluent area of the city that I'd found myself in. Weeks later, my friend and I went on a walk, and we ended up taking the subway downtown to the same area. I took him to the Oculus and we actually went down into it, which I hadn't done on my derive. It was very white, very quiet, and very expensive.
+![Alt text](image url)
