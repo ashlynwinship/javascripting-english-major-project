@@ -5,7 +5,7 @@ h1 {
   text-decoration: underline;
   text-align: center;
 }
-h2 {
+#subtitle {
   text-align: center;
 }
 #intro {
@@ -16,6 +16,9 @@ h2 {
 }
 p {
   color:  #657b83;
+}
+#quote {
+  text-align: center;
 }
 #quote-cred {
   text-align: right;
