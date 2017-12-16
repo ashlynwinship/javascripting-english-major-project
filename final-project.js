@@ -77,7 +77,7 @@ miscDerive2Line = L.polyline(miscDerive2, {color: "#ff0000"}
 
 //define Julius's markers
 let stJohns, morningside, columbusCircle, profSaito, towerRecords, milstein, riverside, folkArtMuseum, wallStStation, pennStation, photoCenter, unionSq, morningsideDr, washHeights, bowery, newApt, carnegieHall, worldTrade, notreDame;
-stJohns = L.circleMarker([40.803795, -73.96165]).addTo(myMap).bindPopup("St. John's Cathedral");
+stJohns = L.circleMarker([40.803795, -73.96165]).addTo(myMap).bindPopup("Cathedral of St. John");
 morningside = L.circleMarker([40.805046, -73.958925]).addTo(myMap).bindPopup("Morningside Park");
 columbusCircle = L.circleMarker([40.768097, -73.981729]).addTo(myMap).bindPopup("Columbus Circle");
 profSaito = L.circleMarker([40.765995, -73.976793]).addTo(myMap).bindPopup("Professor Saito's apartment");
@@ -95,7 +95,7 @@ bowery = L.circleMarker([40.721114, -73.992012]).addTo(myMap).bindPopup("The Bow
 newApt = L.circleMarker([40.744285, -73.999808]).addTo(myMap).bindPopup("Julius's new apartment");
 carnegieHall = L.circleMarker([40.765045, -73.979913]).addTo(myMap).bindPopup("Carnegie Hall");
 worldTrade = L.circleMarker([40.712775, -74.013236]).addTo(myMap).bindPopup("One World Trade Center");
-notreDame = L.circleMarker([40.805052, -73.9604]).addTo(myMap).bindPopup("");
+notreDame = L.circleMarker([40.805052, -73.9604]).addTo(myMap).bindPopup("Notre Dame de la Chapelle");
 
 //My Triangle
 let washingtonSqPk, founders, palladium, astorPl, myTriangle, myTrianglePolygon;
