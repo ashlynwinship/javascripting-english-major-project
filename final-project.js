@@ -9,7 +9,6 @@ L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 tileLayer.addTo(myMap);
 myMap.setView([40.753473, -73.979633], 12);
 
-//change colors on markers for starting points of derives
 //Derive 1
 let stLukesMarker, pier40, pier45, hollandTunnel, aveOfAmericas;
 stLukesMarker = L.marker([40.730391, -74.006171]).addTo(myMap).bindPopup("Starting point for Dérive 1");
@@ -78,33 +77,32 @@ miscDerive2Line = L.polyline(miscDerive2, {color: "#ff0000"}
 
 //define Julius's markers
 let stJohns, morningside, columbusCircle, profSaito, towerRecords, milstein, riverside, folkArtMuseum, wallStStation, pennStation, photoCenter, unionSq, morningsideDr, washHeights, bowery, newApt, carnegieHall, worldTrade, notreDame;
-stJohns = L.circleMarker([40.803795, -73.96165]).addTo(myMap).bindPopup("");
-morningside = L.circleMarker([40.805046, -73.958925]).addTo(myMap).bindPopup("");
-columbusCircle = L.circleMarker([40.768097, -73.981729]).addTo(myMap).bindPopup("");
-profSaito = L.circleMarker([40.765995, -73.976793]).addTo(myMap).bindPopup("");
-towerRecords = L.circleMarker([40.77418, -73.982566]).addTo(myMap).bindPopup("");
-milstein = L.circleMarker([40.841947, -73.943353]).addTo(myMap).bindPopup("");
-riverside = L.circleMarker([40.802072, -73.972599]).addTo(myMap).bindPopup("");
-folkArtMuseum = L.circleMarker([40.773166, -73.981261]).addTo(myMap).bindPopup("");
-wallStStation = L.circleMarker([40.706607, -74.008702]).addTo(myMap).bindPopup("");
-pennStation = L.circleMarker([40.750467, -73.993666]).addTo(myMap).bindPopup("");
-photoCenter = L.circleMarker([40.723013, -73.993432]).addTo(myMap).bindPopup("");
-unionSq = L.circleMarker([40.735788, -73.990437]).addTo(myMap).bindPopup("");
-morningsideDr = L.circleMarker([40.805937, -73.959471]).addTo(myMap).bindPopup("");
-washHeights = L.circleMarker([40.843231, -73.94063]).addTo(myMap).bindPopup("");
-bowery = L.circleMarker([40.721114, -73.992012]).addTo(myMap).bindPopup("");
-newApt = L.circleMarker([40.744285, -73.999808]).addTo(myMap).bindPopup("");
-carnegieHall = L.circleMarker([40.765045, -73.979913]).addTo(myMap).bindPopup("");
-worldTrade = L.circleMarker([40.712775, -74.013236]).addTo(myMap).bindPopup("");
+stJohns = L.circleMarker([40.803795, -73.96165]).addTo(myMap).bindPopup("St. John's Cathedral");
+morningside = L.circleMarker([40.805046, -73.958925]).addTo(myMap).bindPopup("Morningside Park");
+columbusCircle = L.circleMarker([40.768097, -73.981729]).addTo(myMap).bindPopup("Columbus Circle");
+profSaito = L.circleMarker([40.765995, -73.976793]).addTo(myMap).bindPopup("Professor Saito's apartment");
+towerRecords = L.circleMarker([40.77418, -73.982566]).addTo(myMap).bindPopup("The old Tower Records store");
+milstein = L.circleMarker([40.841947, -73.943353]).addTo(myMap).bindPopup("Milstein Hospital");
+riverside = L.circleMarker([40.802072, -73.972599]).addTo(myMap).bindPopup("Riverside Park");
+folkArtMuseum = L.circleMarker([40.773166, -73.981261]).addTo(myMap).bindPopup("American Folk Art Museum");
+wallStStation = L.circleMarker([40.706607, -74.008702]).addTo(myMap).bindPopup("Wall St. Station");
+pennStation = L.circleMarker([40.750467, -73.993666]).addTo(myMap).bindPopup("Penn Station");
+photoCenter = L.circleMarker([40.723013, -73.993432]).addTo(myMap).bindPopup("International Center of Photography");
+unionSq = L.circleMarker([40.735788, -73.990437]).addTo(myMap).bindPopup("Union Square");
+morningsideDr = L.circleMarker([40.805937, -73.959471]).addTo(myMap).bindPopup("Morningside Dr.");
+washHeights = L.circleMarker([40.843231, -73.94063]).addTo(myMap).bindPopup("Washington Heights");
+bowery = L.circleMarker([40.721114, -73.992012]).addTo(myMap).bindPopup("The Bowery");
+newApt = L.circleMarker([40.744285, -73.999808]).addTo(myMap).bindPopup("Julius's new apartment");
+carnegieHall = L.circleMarker([40.765045, -73.979913]).addTo(myMap).bindPopup("Carnegie Hall");
+worldTrade = L.circleMarker([40.712775, -74.013236]).addTo(myMap).bindPopup("One World Trade Center");
 notreDame = L.circleMarker([40.805052, -73.9604]).addTo(myMap).bindPopup("");
 
-
 //My Triangle
-let washingtonSqPk, founders, palladium, point, myTriangle, myTrianglePolygon;
+let washingtonSqPk, founders, palladium, astorPl, myTriangle, myTrianglePolygon;
 washingtonSqPk = L.marker([40.730885, -73.997838]).addTo(myMap).bindPopup("Washington Square Park");
 founders = L.marker([40.732454, -73.989180]).addTo(myMap).bindPopup("Founders Hall");
 palladium = L.marker([40.733202, -73.988493]).addTo(myMap).bindPopup("Palladium");
-point = L.marker([40.730064, -73.991176]).addTo(myMap).bindPopup("Astor Place");
+astorPl = L.marker([40.730064, -73.991176]).addTo(myMap).bindPopup("Astor Place");
 myTriangle = [[40.732454, -73.989180],
               [40.734689, -73.994587],
               [40.730885, -73.997838],
@@ -117,7 +115,6 @@ myTrianglePolygon = L.polygon(myTriangle, {
                         fillColor: "#ffff80"
                       }
 ).addTo(myMap);
-
 
 //Markdown
 let md;
