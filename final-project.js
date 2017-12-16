@@ -7,7 +7,7 @@ L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
       maxZoom: 18
     });
 tileLayer.addTo(myMap);
-myMap.setView([40.722622, -74.000849], 14);
+myMap.setView([40.753473, -73.979633], 12);
 
 //change colors on markers for starting points of derives
 //Derive 1
@@ -77,6 +77,27 @@ miscDerive2Line = L.polyline(miscDerive2, {color: "#ff0000"}
 ).addTo(myMap);
 
 //define Julius's markers
+let stJohns, morningside, columbusCircle, profSaito, towerRecords, milstein, riverside, folkArtMuseum, wallStStation, pennStation, photoCenter, unionSq, morningsideDr, washHeights, bowery, newApt, carnegieHall, worldTrade, notreDame;
+stJohns = L.circleMarker([40.803795, -73.96165]).addTo(myMap).bindPopup("");
+morningside = L.circleMarker([40.805046, -73.958925]).addTo(myMap).bindPopup("");
+columbusCircle = L.circleMarker([40.768097, -73.981729]).addTo(myMap).bindPopup("");
+profSaito = L.circleMarker([40.765995, -73.976793]).addTo(myMap).bindPopup("");
+towerRecords = L.circleMarker([40.77418, -73.982566]).addTo(myMap).bindPopup("");
+milstein = L.circleMarker([40.841947, -73.943353]).addTo(myMap).bindPopup("");
+riverside = L.circleMarker([40.802072, -73.972599]).addTo(myMap).bindPopup("");
+folkArtMuseum = L.circleMarker([40.773166, -73.981261]).addTo(myMap).bindPopup("");
+wallStStation = L.circleMarker([40.706607, -74.008702]).addTo(myMap).bindPopup("");
+pennStation = L.circleMarker([40.750467, -73.993666]).addTo(myMap).bindPopup("");
+photoCenter = L.circleMarker([40.723013, -73.993432]).addTo(myMap).bindPopup("");
+unionSq = L.circleMarker([40.735788, -73.990437]).addTo(myMap).bindPopup("");
+morningsideDr = L.circleMarker([40.805937, -73.959471]).addTo(myMap).bindPopup("");
+washHeights = L.circleMarker([40.843231, -73.94063]).addTo(myMap).bindPopup("");
+bowery = L.circleMarker([40.721114, -73.992012]).addTo(myMap).bindPopup("");
+newApt = L.circleMarker([40.744285, -73.999808]).addTo(myMap).bindPopup("");
+carnegieHall = L.circleMarker([40.765045, -73.979913]).addTo(myMap).bindPopup("");
+worldTrade = L.circleMarker([40.712775, -74.013236]).addTo(myMap).bindPopup("");
+notreDame = L.circleMarker([40.805052, -73.9604]).addTo(myMap).bindPopup("");
+
 
 //My Triangle
 let washingtonSqPk, founders, palladium, point, myTriangle, myTrianglePolygon;
