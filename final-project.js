@@ -7,7 +7,7 @@ L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
       maxZoom: 18
     });
 tileLayer.addTo(myMap);
-myMap.setView([40.753473, -73.979633], 12);
+myMap.setView([40.777502, -73.964427], 12);
 
 //Derive 1
 let stLukesMarker, pier40, pier45, hollandTunnel, aveOfAmericas;
