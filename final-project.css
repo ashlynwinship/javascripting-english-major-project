@@ -14,6 +14,13 @@ h1 {
 }
 #intro {
   text-align: center;
+  color: #000000;
+}
+#map-intro {
+  color: #000000;
+}
+#map-key {
+  color: #000000;
 }
 #map-headings {
   color: #660066;
@@ -26,4 +33,7 @@ p {
 }
 #quote-cred {
   text-align: right;
+}
+#question-answers {
+  color: #000000;
 }
