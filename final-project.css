@@ -42,5 +42,5 @@ p {
 #next-to-text {
   color: #000000;
   font-family: "Times New Roman", Times, serif;
-  float: right;
+  float: inline-start;
 }
