@@ -121,7 +121,7 @@ let md;
 md = window.markdownit({html: true}).use(window.markdownitFootnote);
 ["my-city", "derive1", "derive2", "julius-city"].forEach(function(tab){
   $.ajax({
-    url: "https://ashlynwinship.github.io/javascripting-english-major-project/" + tab + ".md",
+    url: "https://ashlynwinship.github.io/javascripting-english-major-project/markdown/" + tab + ".md",
     success: function(markdown){
       let html;
       html = md.render(markdown);
