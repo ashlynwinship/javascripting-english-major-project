@@ -36,3 +36,11 @@ p {
 #question-answers {
   color: #000000;
 }
+#img {
+  float: left;
+}
+#next-to-text {
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  float: right;
+}
